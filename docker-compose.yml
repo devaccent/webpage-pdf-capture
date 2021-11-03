@@ -1,0 +1,11 @@
+version: '2'
+services:
+  webpage-capture:
+    container_name: webpage-capture
+    build: .
+    ports:
+      - "3010:3010"
+    environment:
+      PORT: 3010
+    volumes:
+      - ./src/:/app/src
